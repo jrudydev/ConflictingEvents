@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9351594124254DE400E10EB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351594024254DE400E10EB6 /* AppDelegate.swift */; };
+		9351594324254DE400E10EB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351594224254DE400E10EB6 /* SceneDelegate.swift */; };
+		9351594524254DE400E10EB6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351594424254DE400E10EB6 /* TableViewController.swift */; };
+		9351594824254DE400E10EB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9351594624254DE400E10EB6 /* Main.storyboard */; };
+		9351594A24254DE900E10EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9351594924254DE900E10EB6 /* Assets.xcassets */; };
+		9351594D24254DE900E10EB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9351594B24254DE900E10EB6 /* LaunchScreen.storyboard */; };
+		9351595824254DE900E10EB6 /* ConflictingAppointmentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351595724254DE900E10EB6 /* ConflictingAppointmentsTests.swift */; };
+		9351596824254EE500E10EB6 /* IntervalTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351596724254EE500E10EB6 /* IntervalTree.swift */; };
+		9351596A24254F9800E10EB6 /* ConflictingAppointmentsIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351596924254F9800E10EB6 /* ConflictingAppointmentsIntervalTests.swift */; };
+		9351596D2425531000E10EB6 /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 9351596C2425531000E10EB6 /* mock.json */; };
+		9351596F2425534300E10EB6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351596E2425534300E10EB6 /* Event.swift */; };
+		9351597424255EFF00E10EB6 /* ConflictingAppointmentsIntervalTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351597324255EFF00E10EB6 /* ConflictingAppointmentsIntervalTreeTests.swift */; };
+		935159772425610E00E10EB6 /* Bundle+JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935159762425610E00E10EB6 /* Bundle+JSONData.swift */; };
+		9351597924256F3F00E10EB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351597824256F3F00E10EB6 /* Constants.swift */; };
+		9351597B24258F3600E10EB6 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351597A24258F3600E10EB6 /* TableViewModel.swift */; };
+		9351597E2425C2F800E10EB6 /* IntervalEventProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351597D2425C2F800E10EB6 /* IntervalEventProtocol.swift */; };
+		935159802425C31500E10EB6 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351597F2425C31500E10EB6 /* Interval.swift */; };
+		935159822425E22300E10EB6 /* Event+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935159812425E22300E10EB6 /* Event+DateFormatter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9351595424254DE900E10EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9351593524254DE400E10EB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9351593C24254DE400E10EB6;
+			remoteInfo = ConflictingAppointments;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9351593D24254DE400E10EB6 /* ConflictingAppointments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConflictingAppointments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9351594024254DE400E10EB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9351594224254DE400E10EB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9351594424254DE400E10EB6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9351594724254DE400E10EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9351594924254DE900E10EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9351594C24254DE900E10EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9351594E24254DE900E10EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9351595324254DE900E10EB6 /* ConflictingAppointmentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConflictingAppointmentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9351595724254DE900E10EB6 /* ConflictingAppointmentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConflictingAppointmentsTests.swift; sourceTree = "<group>"; };
+		9351595924254DE900E10EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9351596724254EE500E10EB6 /* IntervalTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTree.swift; sourceTree = "<group>"; };
+		9351596924254F9800E10EB6 /* ConflictingAppointmentsIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConflictingAppointmentsIntervalTests.swift; sourceTree = "<group>"; };
+		9351596C2425531000E10EB6 /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
+		9351596E2425534300E10EB6 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		9351597324255EFF00E10EB6 /* ConflictingAppointmentsIntervalTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConflictingAppointmentsIntervalTreeTests.swift; sourceTree = "<group>"; };
+		935159762425610E00E10EB6 /* Bundle+JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+JSONData.swift"; sourceTree = "<group>"; };
+		9351597824256F3F00E10EB6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9351597A24258F3600E10EB6 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		9351597D2425C2F800E10EB6 /* IntervalEventProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalEventProtocol.swift; sourceTree = "<group>"; };
+		9351597F2425C31500E10EB6 /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		935159812425E22300E10EB6 /* Event+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+DateFormatter.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9351593A24254DE400E10EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9351595024254DE900E10EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9351593424254DE300E10EB6 = {
+			isa = PBXGroup;
+			children = (
+				9351593F24254DE400E10EB6 /* ConflictingAppointments */,
+				9351595624254DE900E10EB6 /* ConflictingAppointmentsTests */,
+				9351593E24254DE400E10EB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9351593E24254DE400E10EB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9351593D24254DE400E10EB6 /* ConflictingAppointments.app */,
+				9351595324254DE900E10EB6 /* ConflictingAppointmentsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9351593F24254DE400E10EB6 /* ConflictingAppointments */ = {
+			isa = PBXGroup;
+			children = (
+				9351596524254E7300E10EB6 /* App */,
+				93515975242560BB00E10EB6 /* Extensions */,
+				9351596224254E0400E10EB6 /* Models */,
+				9351594424254DE400E10EB6 /* TableViewController.swift */,
+				9351596624254ECE00E10EB6 /* Utilities */,
+				9351596424254E5D00E10EB6 /* Resources */,
+			);
+			path = ConflictingAppointments;
+			sourceTree = "<group>";
+		};
+		9351595624254DE900E10EB6 /* ConflictingAppointmentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9351596924254F9800E10EB6 /* ConflictingAppointmentsIntervalTests.swift */,
+				9351597324255EFF00E10EB6 /* ConflictingAppointmentsIntervalTreeTests.swift */,
+				9351595724254DE900E10EB6 /* ConflictingAppointmentsTests.swift */,
+				9351595924254DE900E10EB6 /* Info.plist */,
+			);
+			path = ConflictingAppointmentsTests;
+			sourceTree = "<group>";
+		};
+		9351596224254E0400E10EB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9351596E2425534300E10EB6 /* Event.swift */,
+				9351597A24258F3600E10EB6 /* TableViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9351596424254E5D00E10EB6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9351597824256F3F00E10EB6 /* Constants.swift */,
+				9351594624254DE400E10EB6 /* Main.storyboard */,
+				9351594924254DE900E10EB6 /* Assets.xcassets */,
+				9351594B24254DE900E10EB6 /* LaunchScreen.storyboard */,
+				9351594E24254DE900E10EB6 /* Info.plist */,
+				9351596C2425531000E10EB6 /* mock.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9351596524254E7300E10EB6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9351594024254DE400E10EB6 /* AppDelegate.swift */,
+				9351594224254DE400E10EB6 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9351596624254ECE00E10EB6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9351597C2425C04E00E10EB6 /* Protocols */,
+				9351597F2425C31500E10EB6 /* Interval.swift */,
+				9351596724254EE500E10EB6 /* IntervalTree.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		93515975242560BB00E10EB6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				935159762425610E00E10EB6 /* Bundle+JSONData.swift */,
+				935159812425E22300E10EB6 /* Event+DateFormatter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9351597C2425C04E00E10EB6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9351597D2425C2F800E10EB6 /* IntervalEventProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9351593C24254DE400E10EB6 /* ConflictingAppointments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9351595C24254DE900E10EB6 /* Build configuration list for PBXNativeTarget "ConflictingAppointments" */;
+			buildPhases = (
+				9351593924254DE400E10EB6 /* Sources */,
+				9351593A24254DE400E10EB6 /* Frameworks */,
+				9351593B24254DE400E10EB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConflictingAppointments;
+			productName = ConflictingAppointments;
+			productReference = 9351593D24254DE400E10EB6 /* ConflictingAppointments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9351595224254DE900E10EB6 /* ConflictingAppointmentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9351595F24254DE900E10EB6 /* Build configuration list for PBXNativeTarget "ConflictingAppointmentsTests" */;
+			buildPhases = (
+				9351594F24254DE900E10EB6 /* Sources */,
+				9351595024254DE900E10EB6 /* Frameworks */,
+				9351595124254DE900E10EB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9351595524254DE900E10EB6 /* PBXTargetDependency */,
+			);
+			name = ConflictingAppointmentsTests;
+			productName = ConflictingAppointmentsTests;
+			productReference = 9351595324254DE900E10EB6 /* ConflictingAppointmentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9351593524254DE400E10EB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "JRudy Gaming";
+				TargetAttributes = {
+					9351593C24254DE400E10EB6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					9351595224254DE900E10EB6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 9351593C24254DE400E10EB6;
+					};
+				};
+			};
+			buildConfigurationList = 9351593824254DE400E10EB6 /* Build configuration list for PBXProject "ConflictingAppointments" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9351593424254DE300E10EB6;
+			productRefGroup = 9351593E24254DE400E10EB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9351593C24254DE400E10EB6 /* ConflictingAppointments */,
+				9351595224254DE900E10EB6 /* ConflictingAppointmentsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9351593B24254DE400E10EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9351594D24254DE900E10EB6 /* LaunchScreen.storyboard in Resources */,
+				9351594A24254DE900E10EB6 /* Assets.xcassets in Resources */,
+				9351594824254DE400E10EB6 /* Main.storyboard in Resources */,
+				9351596D2425531000E10EB6 /* mock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9351595124254DE900E10EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9351593924254DE400E10EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935159802425C31500E10EB6 /* Interval.swift in Sources */,
+				9351594524254DE400E10EB6 /* TableViewController.swift in Sources */,
+				935159772425610E00E10EB6 /* Bundle+JSONData.swift in Sources */,
+				9351594124254DE400E10EB6 /* AppDelegate.swift in Sources */,
+				9351597B24258F3600E10EB6 /* TableViewModel.swift in Sources */,
+				9351596824254EE500E10EB6 /* IntervalTree.swift in Sources */,
+				9351597924256F3F00E10EB6 /* Constants.swift in Sources */,
+				935159822425E22300E10EB6 /* Event+DateFormatter.swift in Sources */,
+				9351597E2425C2F800E10EB6 /* IntervalEventProtocol.swift in Sources */,
+				9351594324254DE400E10EB6 /* SceneDelegate.swift in Sources */,
+				9351596F2425534300E10EB6 /* Event.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9351594F24254DE900E10EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9351597424255EFF00E10EB6 /* ConflictingAppointmentsIntervalTreeTests.swift in Sources */,
+				9351595824254DE900E10EB6 /* ConflictingAppointmentsTests.swift in Sources */,
+				9351596A24254F9800E10EB6 /* ConflictingAppointmentsIntervalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9351595524254DE900E10EB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9351593C24254DE400E10EB6 /* ConflictingAppointments */;
+			targetProxy = 9351595424254DE900E10EB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9351594624254DE400E10EB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9351594724254DE400E10EB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9351594B24254DE900E10EB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9351594C24254DE900E10EB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9351595A24254DE900E10EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9351595B24254DE900E10EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9351595D24254DE900E10EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZRTG86ZKHQ;
+				INFOPLIST_FILE = ConflictingAppointments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jrudygaming.ConflictingAppointments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9351595E24254DE900E10EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZRTG86ZKHQ;
+				INFOPLIST_FILE = ConflictingAppointments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jrudygaming.ConflictingAppointments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9351596024254DE900E10EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZRTG86ZKHQ;
+				INFOPLIST_FILE = ConflictingAppointmentsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jrudygaming.ConflictingAppointmentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConflictingAppointments.app/ConflictingAppointments";
+			};
+			name = Debug;
+		};
+		9351596124254DE900E10EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZRTG86ZKHQ;
+				INFOPLIST_FILE = ConflictingAppointmentsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jrudygaming.ConflictingAppointmentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConflictingAppointments.app/ConflictingAppointments";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9351593824254DE400E10EB6 /* Build configuration list for PBXProject "ConflictingAppointments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9351595A24254DE900E10EB6 /* Debug */,
+				9351595B24254DE900E10EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9351595C24254DE900E10EB6 /* Build configuration list for PBXNativeTarget "ConflictingAppointments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9351595D24254DE900E10EB6 /* Debug */,
+				9351595E24254DE900E10EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9351595F24254DE900E10EB6 /* Build configuration list for PBXNativeTarget "ConflictingAppointmentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9351596024254DE900E10EB6 /* Debug */,
+				9351596124254DE900E10EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9351593524254DE400E10EB6 /* Project object */;
+}
