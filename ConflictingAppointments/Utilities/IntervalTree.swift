@@ -88,7 +88,7 @@ extension IntervalTree {
       conflictSearch(left, event: event, conflicts: &conflicts)
     }
   
-    conflictSearch(root.left, event: event, conflicts: &conflicts)
+    conflictSearch(root.right, event: event, conflicts: &conflicts)
   }
 }
 
