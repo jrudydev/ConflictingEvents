@@ -43,11 +43,15 @@ struct IntervalTree {
     self.root = insert(self.root, event: first)
     
     for event in events[1...] {
-      if let conflict = conflictSearch(self.root, event: event),
-        let unwrappedConflict = conflict as? Event {
-        self.conflicted.insert(unwrappedConflict)
-        self.conflicted.insert(event)
+      var conflicts = [IntervalProtocol]()
+      conflictSearch(self.root, event: event, conflicts: &conflicts)
+      if conflicts.count > 0 { self.conflicted.insert(event) }
+      for conflict in conflicts {
+        if let unwrappedConflict = conflict as? Event {
+          self.conflicted.insert(unwrappedConflict)
+        }
       }
+      
       self.root = insert(self.root, event: event)
     }
   }
@@ -66,27 +70,25 @@ extension IntervalTree {
       root.right = insert(root.right, event: event)
     }
     
-    if root.maxValue < event.interval.max {
-      root.maxValue = event.interval.max
-    }
+    root.maxValue = max(root.maxValue, event.interval.max)
     
     return root
   }
   
   // This funciton is used to detect and track conflicts in the interval tree.
   // Time Complexity: O(Logn)
-  private func conflictSearch(_ node: IntervalNode<Event>?, event: IntervalProtocol) -> IntervalProtocol? {
-    guard let root = node else { return nil }
+  private func conflictSearch(_ node: IntervalNode<Event>?, event: IntervalProtocol, conflicts: inout [IntervalProtocol]) {
+    guard let root = node else { return }
     
     if root.event.interval.conflicts(with: event) {
-      return root.event
+      conflicts += [root.event]
     }
     
     if let left = root.left, left.maxValue >= event.interval.min {
-      return conflictSearch(left, event: event)
+      conflictSearch(left, event: event, conflicts: &conflicts)
     }
   
-    return conflictSearch(root.left, event: event)
+    conflictSearch(root.left, event: event, conflicts: &conflicts)
   }
 }
 
