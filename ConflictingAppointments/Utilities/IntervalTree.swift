@@ -20,7 +20,9 @@ class IntervalNode<T: IntervalProtocol> {
 
 
 // This calls will create a BST based on the lower value of the interval and
-// will keep track of conflicting intervals with a set property.
+// will keep track of conflicting intervals with a unique set. Achieves
+// O(nLogn) for the tree creation and O(Logn + m) for the conflict detection
+// where n is the number of elements and m is the number of conflicting intervals.
 struct IntervalTree {
   var root: IntervalNode<Event>?
   var conflicted = Set<Event>()
@@ -34,21 +36,18 @@ struct IntervalTree {
   }
   
   // This funciton will create the interval tree from a list of events.
-  // Time Complexity: O(nLogn)
+  // Time Complexity: Achieve O(nLogn)
   private mutating func crateIntervalTree(_ events: [Event]) {
     guard let first = events.first else { return }
     
     self.root = insert(self.root, event: first)
     
-    // Each of the methods get called n times with a complexity of O(nLogn) + O(nLogn) = O(nLogn)
     for event in events[1...] {
-      // This call has a time complexity of O(Logn)
       if let conflict = conflictSearch(self.root, event: event),
         let unwrappedConflict = conflict as? Event {
         self.conflicted.insert(unwrappedConflict)
         self.conflicted.insert(event)
       }
-      // This call has a time complexity of O(Logn)
       self.root = insert(self.root, event: event)
     }
   }
