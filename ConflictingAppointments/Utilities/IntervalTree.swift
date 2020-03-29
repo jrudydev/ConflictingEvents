@@ -28,7 +28,7 @@ struct IntervalTree {
   var conflicted = Set<Event>()
   
   init(_ appointments: [Event]) {
-    self.crateIntervalTree(appointments)
+    self.createIntervalTree(appointments)
   }
   
   func isConflicted(_ event: Event) -> Bool {
@@ -37,7 +37,7 @@ struct IntervalTree {
   
   // This funciton will create the interval tree from a list of events.
   // Time Complexity: Achieve O(nLogn)
-  private mutating func crateIntervalTree(_ events: [Event]) {
+  private mutating func createIntervalTree(_ events: [Event]) {
     guard let first = events.first else { return }
     
     self.root = insert(self.root, event: first)

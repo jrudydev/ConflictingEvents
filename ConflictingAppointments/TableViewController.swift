@@ -20,7 +20,6 @@ class TableViewController: UITableViewController {
     self.viewModel = TableViewModel() {
       DispatchQueue.main.async {
         self.tableView.reloadData()
-        print(self.viewModel.intervalTree)
       }
     }
   }
